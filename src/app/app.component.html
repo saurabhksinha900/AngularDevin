@@ -11,9 +11,14 @@
     <a routerLink="/billing" routerLinkActive="active">Billing</a>
     <a routerLink="/analytics" routerLinkActive="active">Analytics</a>
   </div>
-  <div class="nav-user">
-    <span class="user-avatar">SA</span>
-    <span class="user-name">Saurabh Admin</span>
+  <div class="nav-right">
+    <button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+      <span class="theme-icon">{{ isDark ? '&#9788;' : '&#9790;' }}</span>
+    </button>
+    <div class="nav-user">
+      <span class="user-avatar">SA</span>
+      <span class="user-name">Saurabh Admin</span>
+    </div>
   </div>
 </nav>
 <div class="main-content">
