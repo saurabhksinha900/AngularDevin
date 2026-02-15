@@ -1,0 +1,25 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { AnalyticsMetricsComponent } from './analytics-metrics.component';
+
+describe('AnalyticsMetricsComponent', () => {
+  let component: AnalyticsMetricsComponent;
+  let fixture: ComponentFixture<AnalyticsMetricsComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ AnalyticsMetricsComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AnalyticsMetricsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
