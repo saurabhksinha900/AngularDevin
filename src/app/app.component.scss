@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #1a237e, #1976d2);
+  background: var(--nav-bg);
   padding: 0 24px;
   height: 60px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px var(--shadow-nav);
+  transition: background 0.3s ease;
 
   .nav-brand {
     display: flex;
@@ -54,6 +55,35 @@
         background: rgba(255, 255, 255, 0.2);
         color: #fff;
       }
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .theme-toggle {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .theme-icon {
+      font-size: 20px;
+      color: #fff;
+      line-height: 1;
     }
   }
 

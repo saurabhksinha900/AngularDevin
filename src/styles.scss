@@ -1,10 +1,63 @@
 /* Global styles for Angular 8 Large App */
 
-$primary-color: #1976d2;
-$secondary-color: #ff4081;
-$background-color: #fafafa;
-$text-color: #333;
-$border-color: #e0e0e0;
+:root,
+body.theme-light {
+  --bg-primary: #fafafa;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8f9ff;
+  --bg-table-header: #fafafa;
+  --bg-input: #ffffff;
+  --bg-filter: #f5f5f5;
+  --bg-footer: #fafafa;
+  --text-primary: #333333;
+  --text-heading: #1a237e;
+  --text-secondary: #666666;
+  --text-muted: #888888;
+  --text-subtle: #999999;
+  --border-color: #e0e0e0;
+  --border-light: #f0f0f0;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --shadow-nav: rgba(0, 0, 0, 0.15);
+  --nav-bg: linear-gradient(135deg, #1a237e, #1976d2);
+  --link-color: #1976d2;
+  --accent-color: #1976d2;
+  --positive-bg: #e8f5e9;
+  --positive-text: #2e7d32;
+  --negative-bg: #fce4ec;
+  --negative-text: #c62828;
+  --bar-gradient: linear-gradient(180deg, #1976d2, #64b5f6);
+  --source-bar-bg: #e0e0e0;
+  --address-text: #555555;
+}
+
+body.theme-dark {
+  --bg-primary: #121212;
+  --bg-card: #1e1e1e;
+  --bg-card-hover: #2a2a3a;
+  --bg-table-header: #252525;
+  --bg-input: #2a2a2a;
+  --bg-filter: #2a2a2a;
+  --bg-footer: #252525;
+  --text-primary: #e0e0e0;
+  --text-heading: #90caf9;
+  --text-secondary: #aaaaaa;
+  --text-muted: #999999;
+  --text-subtle: #777777;
+  --border-color: #333333;
+  --border-light: #2a2a2a;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-nav: rgba(0, 0, 0, 0.4);
+  --nav-bg: linear-gradient(135deg, #0d1440, #0d47a1);
+  --link-color: #64b5f6;
+  --accent-color: #64b5f6;
+  --positive-bg: #1b3a1b;
+  --positive-text: #66bb6a;
+  --negative-bg: #3a1b1b;
+  --negative-text: #ef9a9a;
+  --bar-gradient: linear-gradient(180deg, #64b5f6, #1976d2);
+  --source-bar-bg: #333333;
+  --address-text: #bbbbbb;
+}
 
 * {
   margin: 0;
@@ -14,17 +67,18 @@ $border-color: #e0e0e0;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: $background-color;
-  color: $text-color;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
-  color: $primary-color;
+  color: var(--link-color);
   text-decoration: none;
 
   &:hover {
-    color: darken($primary-color, 10%);
+    opacity: 0.85;
   }
 }
 
@@ -32,19 +86,4 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
-}
-
-nav {
-  background-color: $primary-color;
-  padding: 12px 24px;
-
-  a {
-    color: white;
-    margin-right: 16px;
-    font-weight: 500;
-
-    &:hover {
-      opacity: 0.85;
-    }
-  }
 }
