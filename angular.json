@@ -65,21 +65,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular8-large-app:build"
+            "buildTarget": "angular8-large-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular8-large-app:build:production"
+              "buildTarget": "angular8-large-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular8-large-app:build"
+            "buildTarget": "angular8-large-app:build"
           }
         },
-        "test": {
+        "test":{
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
@@ -123,5 +123,8 @@
         }
       }
     }},
-  "defaultProject": "angular8-large-app"
+  "defaultProject": "angular8-large-app",
+  "cli": {
+    "analytics": false
+  }
 }
