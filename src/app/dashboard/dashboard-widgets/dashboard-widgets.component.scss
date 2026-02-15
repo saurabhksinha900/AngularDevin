@@ -1,0 +1,17 @@
+.page-header { margin-bottom: 20px; h2 { color: #1a237e; } }
+.widgets-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.widget { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;
+  .widget-header { padding: 16px 20px; font-weight: 600; color: #1a237e; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center; }
+  .widget-body { padding: 20px; }
+}
+.badge { background: #ff4081; color: #fff; font-size: 12px; padding: 2px 8px; border-radius: 10px; }
+.big-icon { font-size: 48px; } .temp { font-size: 36px; font-weight: 700; color: #1a237e; margin-left: 16px; }
+.weather .widget-body { display: flex; align-items: center; flex-wrap: wrap; p { width: 100%; margin-top: 8px; color: #666; } }
+.task-item { padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #333; padding-left: 24px; position: relative;
+  &::before { content: ''; width: 16px; height: 16px; border: 2px solid #ccc; border-radius: 4px; position: absolute; left: 0; top: 12px; }
+  &.done { color: #999; text-decoration: line-through; &::before { background: #43a047; border-color: #43a047; } }
+}
+.notif-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: 14px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; &.blue { background: #1976d2; } &.green { background: #43a047; } &.orange { background: #ef6c00; } &.red { background: #c62828; } }
+.links { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-btn { background: #e3f2fd; color: #1976d2; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; &:hover { background: #bbdefb; } }

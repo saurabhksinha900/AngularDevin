@@ -1,0 +1,50 @@
+/* Global styles for Angular 8 Large App */
+
+$primary-color: #1976d2;
+$secondary-color: #ff4081;
+$background-color: #fafafa;
+$text-color: #333;
+$border-color: #e0e0e0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+nav {
+  background-color: $primary-color;
+  padding: 12px 24px;
+
+  a {
+    color: white;
+    margin-right: 16px;
+    font-weight: 500;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

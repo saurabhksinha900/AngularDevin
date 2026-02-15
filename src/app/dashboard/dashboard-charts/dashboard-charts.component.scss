@@ -1,0 +1,11 @@
+.page-header { margin-bottom: 20px; h2 { color: #1a237e; } }
+.charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); h3 { margin: 0 0 20px; color: #1a237e; font-size: 16px; } &.full-width { grid-column: 1 / -1; } }
+.line-chart { .chart-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; .label { min-width: 60px; font-size: 13px; color: #888; } .val { font-size: 13px; font-weight: 600; color: #1a237e; } } }
+.line-bar { height: 24px; background: linear-gradient(90deg, #1976d2, #64b5f6); border-radius: 6px; &.highlight { background: linear-gradient(90deg, #ff4081, #ff80ab); } }
+.donut-chart { display: flex; flex-direction: column; gap: 12px; }
+.donut-segment { display: flex; align-items: center; gap: 12px; span { font-size: 14px; color: #333; } &::before { content: ''; width: 16px; height: 16px; border-radius: 4px; background: var(--color); } }
+.comparison-bars { display: flex; justify-content: space-around; align-items: flex-end; height: 180px; margin-bottom: 16px; }
+.comp-group { text-align: center; .month { font-size: 12px; color: #888; } .comp-bar { display: flex; gap: 4px; align-items: flex-end; height: 160px; margin-bottom: 6px; } }
+.this-year { width: 24px; background: #1976d2; border-radius: 4px 4px 0 0; } .last-year { width: 24px; background: #ccc; border-radius: 4px 4px 0 0; }
+.legend { display: flex; gap: 20px; justify-content: center; } .legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #666; } .swatch { width: 12px; height: 12px; border-radius: 3px; &.blue { background: #1976d2; } &.gray { background: #ccc; } }

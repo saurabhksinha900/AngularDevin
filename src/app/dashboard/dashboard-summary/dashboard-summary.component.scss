@@ -1,0 +1,18 @@
+.page-header { margin-bottom: 20px; h2 { color: #1a237e; } }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.summary-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  h4 { margin: 0 0 16px; color: #1a237e; font-size: 16px; }
+}
+.metric-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0;
+  span { color: #666; font-size: 14px; } strong { color: #1a237e; }
+}
+.progress-item { display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+  span { font-size: 13px; color: #666; min-width: 90px; &:last-child { min-width: 50px; text-align: right; } }
+}
+.progress-bar { flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px; overflow: hidden;
+  .fill { height: 100%; background: #1976d2; border-radius: 4px; &.green { background: #43a047; } &.orange { background: #ef6c00; } }
+}
+table { width: 100%; border-collapse: collapse;
+  th { text-align: left; padding: 8px; color: #888; font-size: 12px; text-transform: uppercase; border-bottom: 2px solid #e0e0e0; }
+  td { padding: 10px 8px; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+}

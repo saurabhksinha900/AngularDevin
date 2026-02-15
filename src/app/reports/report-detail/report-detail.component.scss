@@ -1,0 +1,15 @@
+.page-header { margin-bottom: 20px; h2 { color: #1a237e; margin: 8px 0 0; } }
+.back-link { color: #1976d2; font-size: 13px; cursor: pointer; &:hover { text-decoration: underline; } }
+.report-meta { display: flex; gap: 24px; margin-bottom: 20px; padding: 16px 20px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.meta-item { font-size: 14px; color: #666; strong { color: #333; } }
+.status { padding: 3px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; &.published { background: #e8f5e9; color: #2e7d32; } }
+.card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; h3 { margin: 0 0 16px; color: #1a237e; } p { color: #555; line-height: 1.6; } }
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+.kpi { text-align: center; padding: 16px; background: #f8f9ff; border-radius: 8px; }
+.kpi-value { display: block; font-size: 24px; font-weight: 700; color: #1a237e; }
+.kpi-label { font-size: 12px; color: #888; margin-top: 4px; }
+.seg-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.seg-label { min-width: 90px; font-size: 14px; color: #666; }
+.seg-bar { flex: 1; height: 20px; background: #e0e0e0; border-radius: 10px; }
+.seg-fill { height: 100%; border-radius: 10px; background: #1976d2; &.green { background: #43a047; } &.orange { background: #ef6c00; } }
+.seg-val { min-width: 70px; text-align: right; font-weight: 600; color: #1a237e; }
