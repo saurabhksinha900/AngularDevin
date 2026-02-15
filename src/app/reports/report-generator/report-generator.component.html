@@ -1,1 +1,33 @@
-<p>report-generator works!</p>
+<div class="page-header"><h2>Report Generator</h2><p class="subtitle">Create custom reports with flexible parameters</p></div>
+<div class="generator-layout">
+  <div class="card">
+    <h3>Report Configuration</h3>
+    <div class="form-grid">
+      <div class="form-group"><label>Report Name</label><input placeholder="Enter report name" /></div>
+      <div class="form-group"><label>Report Type</label><select><option>Financial</option><option>Analytics</option><option>Marketing</option><option>HR</option><option>Security</option></select></div>
+      <div class="form-group"><label>Date Range - Start</label><input type="date" value="2024-01-01" /></div>
+      <div class="form-group"><label>Date Range - End</label><input type="date" value="2024-02-15" /></div>
+      <div class="form-group full"><label>Description</label><textarea rows="3" placeholder="Brief description of the report..."></textarea></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Data Sources</h3>
+    <div class="source-list">
+      <label class="source-item"><input type="checkbox" checked /><span>User Database</span></label>
+      <label class="source-item"><input type="checkbox" checked /><span>Transaction Records</span></label>
+      <label class="source-item"><input type="checkbox" /><span>Analytics Events</span></label>
+      <label class="source-item"><input type="checkbox" checked /><span>Billing System</span></label>
+      <label class="source-item"><input type="checkbox" /><span>External APIs</span></label>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Output Format</h3>
+    <div class="format-options">
+      <div class="format-card selected"><span class="format-icon">&#128196;</span><span>PDF</span></div>
+      <div class="format-card"><span class="format-icon">&#128202;</span><span>Excel</span></div>
+      <div class="format-card"><span class="format-icon">&#128200;</span><span>CSV</span></div>
+      <div class="format-card"><span class="format-icon">&#127760;</span><span>HTML</span></div>
+    </div>
+  </div>
+  <div class="actions"><button class="btn primary">Generate Report</button><button class="btn secondary">Save as Template</button></div>
+</div>

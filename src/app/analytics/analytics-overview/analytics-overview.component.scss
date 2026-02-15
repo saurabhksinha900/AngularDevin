@@ -1,0 +1,22 @@
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; h1 { font-size: 28px; color: #1a237e; margin: 0; } .subtitle { color: #666; font-size: 14px; margin-top: 4px; } }
+.date-range { display: flex; gap: 4px; }
+.range-btn { padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; background: #f5f5f5; color: #666; &.active { background: #1976d2; color: #fff; } }
+.metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+.metric-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.metric-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.metric-label { font-size: 13px; color: #888; }
+.trend { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 10px; &.up { background: #e8f5e9; color: #2e7d32; } &.down { background: #e8f5e9; color: #2e7d32; } }
+.metric-value { font-size: 28px; font-weight: 700; color: #1a237e; display: block; margin-bottom: 12px; }
+.mini-chart { display: flex; align-items: flex-end; gap: 4px; height: 40px; }
+.mini-bar { width: 100%; border-radius: 3px; background: #1976d2; &.green { background: #43a047; } &.orange { background: #ef6c00; } &.purple { background: #7b1fa2; } }
+.overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); h3 { margin: 0 0 16px; color: #1a237e; } }
+.page-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f0f0f0; &:last-child { border-bottom: none; } }
+.rank { font-size: 13px; font-weight: 700; color: #1976d2; min-width: 24px; }
+.page-name { font-size: 14px; color: #333; flex: 1; }
+.views { font-size: 14px; font-weight: 600; color: #1a237e; }
+.source-list { display: flex; flex-direction: column; gap: 14px; }
+.source-row { display: flex; align-items: center; gap: 12px; }
+.source-name { min-width: 70px; font-size: 14px; color: #666; }
+.source-bar { flex: 1; height: 10px; background: #e0e0e0; border-radius: 5px; }
+.bar-fill { height: 100%; border-radius: 5px; &.blue { background: #1976d2; } &.green { background: #43a047; } &.purple { background: #7b1fa2; } &.orange { background: #ef6c00; } }

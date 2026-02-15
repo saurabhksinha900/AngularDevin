@@ -1,0 +1,8 @@
+.page-header { margin-bottom: 20px; h2 { color: #1a237e; } }
+.reports-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.report-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.report-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px; &.blue { background: #e3f2fd; } &.green { background: #e8f5e9; } &.purple { background: #f3e5f5; } &.orange { background: #fff3e0; } }
+.report-card h4 { margin: 0 0 8px; color: #1a237e; font-size: 16px; }
+.report-card p { color: #666; font-size: 14px; line-height: 1.5; margin: 0 0 16px; }
+.report-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #f0f0f0; span { font-size: 12px; color: #999; } }
+.link { color: #1976d2; font-size: 13px; font-weight: 600; cursor: pointer; &:hover { text-decoration: underline; } }

@@ -1,11 +1,21 @@
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/users">Users</a>
-  <a routerLink="/reports">Reports</a>
-  <a routerLink="/accounts">Accounts</a>
-  <a routerLink="/billing">Billing</a>
-  <a routerLink="/analytics">Analytics</a>
+<nav class="top-nav">
+  <div class="nav-brand">
+    <span class="logo">A8</span>
+    <span class="brand-name">Angular8 Enterprise</span>
+  </div>
+  <div class="nav-links">
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/users" routerLinkActive="active">Users</a>
+    <a routerLink="/reports" routerLinkActive="active">Reports</a>
+    <a routerLink="/accounts" routerLinkActive="active">Accounts</a>
+    <a routerLink="/billing" routerLinkActive="active">Billing</a>
+    <a routerLink="/analytics" routerLinkActive="active">Analytics</a>
+  </div>
+  <div class="nav-user">
+    <span class="user-avatar">SA</span>
+    <span class="user-name">Saurabh Admin</span>
+  </div>
 </nav>
-<div class="container">
+<div class="main-content">
   <router-outlet></router-outlet>
 </div>
